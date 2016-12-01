@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0" name="viewport">
+
+    <style type="text/css">
+      body {
+        margin: 0;
+      }
+
+      .toc {
+        display: block;
+        padding: 10px;
+        position: -webkit-sticky;
+        top: 0;
+        background: #ddd;
+        border-bottom: 1px solid #ccc;
+      }
+
+      .toc-list {
+        display: none;
+      }
+
+      main {
+        padding: 10px;
+      }
+
+      .toc-open {
+        height: 100%;
+        overflow: hidden;
+      }
+
+      .toc-open .toc {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        overflow: auto;
+      }
+
+      .toc-open .toc-list {
+        display: block;
+      }
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <script type="text/javascript">
+      $(function () {
+        $('.js-show-toc').on('click', function () {
+          $('body').toggleClass('toc-open');
+        });
+      })
+    </script>
+
+  </head>
+
+  <body>
+    <nav class="toc">
+      <a href="#toc" class="toc-toggle js-show-toc">Show / Hide Table of Contents</a>
+      
+      <ul class="toc-list">
+        <li><a href="javascript: alert('Link #1');">Link #1</a></li>
+        <li><a href="javascript: alert('Link #2');">Link #2</a></li>
+        <li><a href="javascript: alert('Link #3');">Link #3</a></li>
+        <li><a href="javascript: alert('Link #4');">Link #4</a></li>
+        <li><a href="javascript: alert('Link #5');">Link #5</a></li>
+        <li><a href="javascript: alert('Link #6');">Link #6</a></li>
+        <li><a href="javascript: alert('Link #7');">Link #7</a></li>
+        <li><a href="javascript: alert('Link #8');">Link #8</a></li>
+        <li><a href="javascript: alert('Link #9');">Link #9</a></li>
+        <li><a href="javascript: alert('Link #10');">Link #10</a></li>
+        <li><a href="javascript: alert('Link #11');">Link #11</a></li>
+        <li><a href="javascript: alert('Link #12');">Link #12</a></li>
+        <li><a href="javascript: alert('Link #13');">Link #13</a></li>
+        <li><a href="javascript: alert('Link #14');">Link #14</a></li>
+        <li><a href="javascript: alert('Link #15');">Link #15</a></li>
+        <li><a href="javascript: alert('Link #16');">Link #16</a></li>
+        <li><a href="javascript: alert('Link #17');">Link #17</a></li>
+        <li><a href="javascript: alert('Link #18');">Link #18</a></li>
+        <li><a href="javascript: alert('Link #19');">Link #19</a></li>
+        <li><a href="javascript: alert('Link #20');">Link #20</a></li>
+        <li><a href="javascript: alert('Link #21');">Link #21</a></li>
+        <li><a href="javascript: alert('Link #22');">Link #22</a></li>
+        <li><a href="javascript: alert('Link #23');">Link #23</a></li>
+        <li><a href="javascript: alert('Link #24');">Link #24</a></li>
+        <li><a href="javascript: alert('Link #25');">Link #25</a></li>
+        <li><a href="javascript: alert('Link #26');">Link #26</a></li>
+        <li><a href="javascript: alert('Link #27');">Link #27</a></li>
+        <li><a href="javascript: alert('Link #28');">Link #28</a></li>
+        <li><a href="javascript: alert('Link #29');">Link #29</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut lacinia ligula. Nam odio est, interdum ut tortor ut, imperdiet placerat neque. Morbi sagittis dolor a mattis commodo. Curabitur ultrices sem sem, vel ultrices risus dapibus eu. Ut mollis venenatis molestie. Morbi commodo sodales ligula, at pretium risus facilisis non. Suspendisse molestie volutpat velit eu tempor. Suspendisse vehicula maximus elit, non commodo sapien suscipit non. Vestibulum placerat, quam sed porttitor convallis, massa purus hendrerit turpis, imperdiet imperdiet magna orci nec mi. Morbi a tempus lectus. Curabitur in orci in erat feugiat imperdiet non sed est. Ut vitae cursus enim, et porta elit. Phasellus lacinia, est eget placerat feugiat, turpis risus tempus felis, ut tincidunt purus lectus imperdiet arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+      <p>Etiam dignissim, enim ac dignissim varius, libero neque semper nulla, tristique commodo lectus odio at neque. Donec aliquet, diam id egestas placerat, metus ex pulvinar ante, non suscipit turpis elit nec augue. Sed maximus lacus vel dolor pretium, sed gravida mauris tincidunt. In condimentum mi id magna condimentum, eget euismod mi tristique. Quisque ultricies viverra nibh vel aliquam. Donec dapibus felis quis risus pharetra iaculis. Mauris luctus turpis vitae leo tempus, vel lacinia lacus consequat. Duis euismod nulla nec commodo cursus. Aliquam vestibulum et sapien quis tempus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+
+      <p>Praesent a varius lacus. Vivamus quis nunc nec augue interdum semper. Suspendisse molestie tortor quam. In malesuada orci orci, vitae gravida metus gravida at. Suspendisse condimentum arcu purus, eget molestie sem pretium sed. Aenean varius sodales scelerisque. Vivamus sit amet eleifend sapien. Maecenas sollicitudin imperdiet tellus, at fringilla enim.</p>
+
+      <p>Nullam iaculis consequat leo, vitae sollicitudin arcu maximus a. Morbi lacinia ligula tellus, ut semper sem consequat eu. Proin congue ligula non fermentum ornare. Nam molestie lectus gravida consectetur efficitur. Cras vitae luctus nunc, quis elementum odio. Duis ligula erat, hendrerit non nunc quis, tempus hendrerit est. Cras non massa laoreet ante tristique scelerisque. Ut sodales tempus augue, et molestie dui pulvinar at. Duis sagittis ante arcu, in fermentum dolor bibendum ac. Sed dignissim nisi nibh, et volutpat sem eleifend vitae. Integer ultricies pharetra massa vel porta. Pellentesque convallis tempus dui, quis vehicula ligula rutrum at. Morbi purus lacus, ultricies sed facilisis non, molestie sit amet nisl.</p>
+
+      <p>Aliquam tempus non lorem non suscipit. Mauris sit amet consectetur est. Cras eget enim accumsan, ultricies ligula eget, sollicitudin tellus. Quisque in ornare tellus, ornare venenatis lacus. Aliquam tortor turpis, maximus eu libero sit amet, imperdiet molestie tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed quis ante sit amet nisi viverra posuere. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce iaculis sagittis mauris ut tincidunt. Praesent porttitor mauris eu ligula congue, ac bibendum velit varius. Morbi accumsan, elit quis convallis posuere, dolor tellus auctor enim, quis aliquet erat metus nec nibh. Nunc justo dolor, ullamcorper ut neque commodo, suscipit ullamcorper mi. Fusce ut nibh eu lorem laoreet suscipit. Phasellus sed luctus sem. Pellentesque mollis ante nunc, id laoreet magna convallis vehicula. Morbi at suscipit nunc, vel tempor lacus.</p>
+    </main>
+
+  </body>
+</html>

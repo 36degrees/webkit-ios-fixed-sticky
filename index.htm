@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0" name="viewport">
+  </head>
+</html>
+
+<body>
+
+  <h1>Overview</h1>
+
+  <p>These links demonstrate weird behaviour in Webkit on iOS when an element is changed between <code>position: sticky;</code> and <code>position: fixed;</code> states.</p>
+
+  <h2>Changing from sticky to fixed</h2>
+
+  <h3>Steps to Reproduce</h3>
+  <ul>
+    <li>Load the <a href="closed.htm">closed example</a> in an iOS browser.</li>
+    <li>Click the 'Show / Hide Table of Contents' toggle link</li>
+  </ul>
+
+  <h3>Expected Behaviour</h3>
+  <ul>
+    <li>The <code>nav</code> element expands to fill the viewport.</li>
+  </ul>
+
+  <h3>Actual Behaviour</h3>
+  <ul>
+    <li>The page is rendered strangely - the navigation element occupies approximately the lower third of the screen</li>
+    <li>Despite this, when interacting with the screen, the browser reacts as if the elements are in their correct positions.</li>
+  </ul>
+
+  <h2>Changing from fixed to sticky</h2>
+  <h3>Steps to Reproduce</h3>
+  <ul>
+    <li>Load the <a href="open.htm">open example</a> in an iOS browser. (This also seems to happen in Safari on Mac)</li>
+    <li>Click the 'Show / Hide Table of Contents' toggle link</li>
+  </ul>
+
+  <h3>Expected Behaviour</h3>
+  <ul>
+    <li>The <code>nav</code> reverts to stick at the top of the screen, as in the initial state of <a href="closed.htm">the closed example</a>.</li>
+  </ul>
+
+  <h3>Actual Behaviour</h3>
+  <ul>
+    <li>The web content process will <em>usually</em> (but not always) crash</li>
+  </ul>
+    
+  </ul>
+</body>
